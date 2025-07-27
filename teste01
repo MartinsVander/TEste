@@ -1,0 +1,47 @@
+use  database_sucos;
+
+select cpf as cpf_cliente, nome as nome_cliente 
+from tbcliente  
+order by nome asc 
+limit 10;
+
+select nome as nome_cliente, idade
+from tbcliente
+where idade >20
+order by idade asc;
+
+select nome as nome_cliente, data_nascimento
+from tbcliente
+where data_nascimento > 1995-01-30;
+
+select nome as nome_cliente, data_nascimento
+from tbcliente
+where year(DATA_NASCIMENTO) >= 1995 ;
+
+select nome as nome_cliente, data_nascimento
+from tbcliente
+where month(data_nascimento) >= 10;
+
+select nome as nome_cliente, data_nascimento
+from tbcliente
+where day(data_nascimento) >= 10;
+
+-- and , or
+
+select*from tbcliente
+where idade between idade 19 and idade 22;
+
+
+select*from tbcliente
+where idade <> 22;
+
+select*from tbproduto
+where preco_lista between 16 and 23 ;
+
+select*from tbcliente
+where nome like '%val%';
+-- tudo que contem o trecho 'val'
+
+select*from tbcliente
+where nome like '%fernando%';
+-- like '%fernando%'--> pesquisa todos nomes que contem 'fernando'
