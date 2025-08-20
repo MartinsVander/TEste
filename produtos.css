@@ -1,0 +1,237 @@
+body{
+     font-family: "Montserrat", sans-serif;
+}
+header {
+
+    background-color:  #dcdcdc
+;
+    padding:  20px 0;
+
+}
+.caixa {
+   
+     position: relative;
+    width: 940px;/*tamanho recomendado*/
+    margin:0 auto;/* 0 pra cima e baixo e auto para os lados*/
+
+
+}
+nav {
+    position: absolute;
+    top: 110px; /*distância do topo*/
+    right: 0; /*distancia da margem direita*/
+    
+}
+
+nav li{
+    display: inline; 
+   text-transform: uppercase; 
+   /*letras maiusculas*/
+   margin:0 0 0 15px; /* margem externa*/
+   /* topo, direita, baixo, esquerda*/
+   padding: 2px;
+    
+}
+nav a{
+color: black;
+font-weight: bold;
+font-size: 23px; 
+text-decoration: none;
+ 
+
+}
+/* :hover--> comportamento de 
+quando passa mouse por cima*/
+nav a:hover{
+    color:chartreuse;
+    transition: 0.4s all ease;
+     /*Define a duração da transição */
+   
+}
+
+.produtos {
+    text-align: center;
+   width: 940px;
+
+   margin: 0 auto;   
+   padding: 50px 0;
+   /* 50px cima e baixo
+   0 para os lados*/
+}  
+
+.produtosl1 {
+    
+	display: inline-block;
+    text-align: center;
+    width: 30%; 
+    vertical-align:top; 
+    margin: 0 1.5%; 
+    padding: 30px 20px;
+    box-sizing: border-box;  
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.produtosl1:hover {
+    /* troca cor da borda*/
+    border-color: rgb(156, 222, 193);
+    transition: 0.4s all ease;
+    
+
+}
+/* :active comportamento quando mouse
+for clicado*/
+.produtosl1:active{
+    border-color: rgb(20, 111, 72);
+    
+}
+/* quando mause passar 
+por cima vai alterar a fonte h2*/
+.produtosl1:hover h2{
+    font-size: 28px;
+    transition: 0.4s all ease;
+}
+
+
+
+ .produtos h2 {
+    font-size:26px ;
+    font-weight: bolder;
+    /* font - weigth = espessura da fonte*/
+    /* - font-weight: bold; → Deixa a fonte em negrito.*/
+
+}
+.descricao {
+    font-size: 18px;
+}
+.preco {
+    font-size: 20px;
+    font-weight: bolder ;
+    margin-top: 10px;
+    /* add 10px cima 
+    do preço*/
+}
+
+footer {
+    text-align: center;
+    /* colocar imagem de fundo*/
+    background: url("img/bg.jpg");
+    padding: 35px;
+}
+
+.copyright{
+    color:aliceblue;
+    font-size: 10px;
+}
+main{
+    width: 940px;
+    /*centraliza*/
+    margin: 0 auto; 
+}
+
+form{
+   
+    margin: 0 auto; 
+     padding: 40px 0;
+    /*- O padding superior e inferior será de 40 pixels.*/
+    /* O padding esquerdo e direito será 0*/
+}
+
+form label, form p{
+     margin: 0 auto;
+    display:block;
+   font-size:20px;
+   margin:0 0 8px 0;
+   /* (superior, direita, inferior e esquerda)*/
+
+}
+.class-input {
+    display:block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    /*10px cima e baixo 25px lado botão enviar*/
+    width: 50%;
+    /*largura do campo de envio*/
+}
+.checkbox{
+    padding:20px 0;
+}
+
+
+.enviar {
+    width: 40%;                  /* Define a largura do botão como 40% do elemento pai */
+    padding: 15px 0;             /* Espaçamento interno: 15px em cima e embaixo, 0 nas laterais */
+    background-color: rgb(235, 134, 97); /* Cor de fundo em tom laranja/salmão */
+    color: white;                /* Cor do texto: branco */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    font-size: 19px;             /* Tamanho da fonte: 19 pixels */
+    border-radius: 5px; /* border-radius: 5px;*/
+    border:none; /*remove borda*/
+   transition: 0.4s all ;/*Suaviza a  mudança quando mouse passa por cima.*/
+    
+}
+/*
+ * Este estilo muda a cor de fundo de elementos com a classe 'enviar'
+ * para 'darkorange' quando o usuário passa o mouse por cima.
+ */
+
+.enviar:hover{
+    background-color: darkorange ;
+    transform:scale(1.01);
+    /* Aumenta o elemento em 1% do seu tamanho original */
+   
+}
+
+
+table {
+    /* Define as margens externas da tabela na ordem: TOP, RIGHT, BOTTOM, LEFT */
+    margin: 20px 0 40px 0; 
+    /* 20px em cima, 0 à direita, 40px embaixo, 0 à esquerda */
+}
+
+thead {
+    /* Define a cor de fundo da seção de cabeçalho da tabela */
+    background-color: #6f6a6a; /* Um tom de cinza escuro */
+    /* Define a cor do texto dentro do cabeçalho da tabela */
+    color: aliceblue; /* Um tom de azul bem claro */
+    /* Torna o texto dentro do cabeçalho da tabela em negrito */
+    font-weight: bold; 
+}
+
+td, th {    /* Define uma borda de 1 pixel sólida e preta
+     para todas as células de dados e de cabeçalho */
+    border: 1px solid black;
+    /* Define o preenchimento interno das células: 
+    10px no TOP/BOTTOM e 8px no LEFT/RIGHT */
+    padding: 10px 8px; 
+}
+.titulo-centralizado{
+    text-align: center;
+    font-size:2em;
+    margin: 0 0 1em 0;
+    clear:left;
+}
+
+.utensilios{
+    width:120px;
+    float:left;
+    margin:0 20px 20px 0;
+}
+
+.principal p{
+    margin:0 0 1em 0;
+    /* Inferior: 1em (equivalente à altura da fonte atual)*/
+
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.imagembeneficios {
+    width: 60%;
+}
+.video{
+    width:560px;
+    margin: 2em auto;
+}
